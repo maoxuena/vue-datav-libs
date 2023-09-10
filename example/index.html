@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>snow datav libs example</title>
+  <script src="js/vue.global.js"></script>
+  <script src="../dist/snow.datav.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    {{message}}
+    <test-component></test-component>
+  </div>
+  <script>
+    Vue.createApp({
+      setup() {
+        var message = 'hello imooc!'
+        return {
+          message
+        }
+      }
+    }).use(snowDataV).mount('#app')
+  </script>
+</body>
+
+</html>
